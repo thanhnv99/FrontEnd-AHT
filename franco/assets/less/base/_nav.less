@@ -1,0 +1,173 @@
+@media screen and (min-width: 320px) {
+
+    nav {
+        .flex-cross-center;
+        flex-direction: column;
+        padding: 10px 30px 10px 29px;
+        border-bottom: 2px solid @gray-6;
+        position: relative;
+    }
+
+    .logo {
+        &-container {
+            .flex-cross-center;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu {
+        &-container {
+            display: none;
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 2px solid @gray-6;
+
+            position: absolute;
+            left: 0;
+            top: 100%+2px;
+
+            .montserrat-bold;
+            font-weight: 700;
+            font-size: 14px;
+
+            background-color: @white-0;
+        }
+
+        &-link {
+            &_list {
+                .flex-cross-center;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &_item {
+                margin-bottom: 10px;
+                color: @black;
+                text-transform: uppercase;
+            }
+
+            &_item:hover {
+                color : @hover-color;
+            }
+
+            &-active {
+                color: @black;
+            }
+        }
+    }
+
+    .icon {
+        &-container {
+            .flex-main-arround;
+            width: 100%;
+        }
+
+        &-link {
+            color: @black;
+
+            &_element {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    nav {
+        .flex-main-between;
+        flex-direction: row;
+    }
+
+    .logo {
+        &-container {
+            margin-bottom: 0;
+        }
+    }
+
+    .menu {
+
+        &-link {
+            &_list {
+                .flex-main-between;
+                flex-direction: row;
+                padding: 15px 30px;
+
+                box-sizing: border-box;
+            }
+
+            &_item {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .icon {
+        &-container {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        &-container {
+            display: block;
+            border: none;
+            width: auto;
+            flex-grow: 1;
+            max-width: 892px;
+
+            position: initial;
+        }
+
+        &-link {
+            &_list {
+                padding-left: 40px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    #menu-button-container {
+        display: none;
+    }
+
+    .icon {
+        &-container {
+            .flex-main-end;
+            width: 110px;
+        }
+
+        &-link {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    nav {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .logo {
+        &-container {
+            margin-bottom: 0;
+        }
+    }    
+
+    .icon {
+        &-container {
+            width: 222px;
+        }
+
+        &-link {
+            &_element {
+                font-size: 27px;
+            }
+        }
+    }
+}

@@ -1,0 +1,233 @@
+@media screen and (min-width:320px) {
+    footer {
+        width: 100%;
+        padding-top: 60px;
+
+        background-color: @black-0;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        &-up {
+            .flex-cross-center;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: 1140px;
+            width: 100%;
+
+            .montserrat;
+        }
+
+        &-about {
+            .flex-cross-center;
+            flex-direction: column;
+            max-width: 263px;
+            width: 100%;
+        }
+
+        &-title {
+            .flex-main-center;
+            width: 80%;
+            height: 48px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+            font-size: 16.4px;
+            text-transform: capitalize;
+            color: @white-1;
+        } 
+
+        &-info {
+            margin-bottom: 45px;
+
+            .opensans-regular;
+            color: @gray-1;
+            font-size: 14.5px;
+            line-height: 22px;
+        }
+
+        &-social {
+            width: 157px;
+            margin-bottom: 40px;
+
+            &-list {
+               .flex-main-between;
+            }
+        }
+
+        &-nav {
+            width: 100%;
+            max-width: 360px;
+            margin-bottom: 40px;
+            .flex-cross-center;
+            flex-direction: column;
+
+            &-container {
+                .flex-main-between;
+                width: 100%;
+            }
+
+            &-left,
+            &-right {
+                .flex-main-center;
+            }
+
+            &-left{
+                width: 54%;
+            }
+
+            &-right{
+                width: 46%;
+            }
+        }
+
+        &-link,
+        &-social-link {
+            .opensans-regular;
+            color: @gray-5;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+
+        &-link{
+            font-size: 13px;
+            margin-bottom: 15px;
+
+            &-active {
+                color: @white-0;
+                text-decoration: underline;
+            }
+        }
+
+        &-location {
+            width: 100%;
+            max-width: 262px;
+            .flex-cross-center;
+            flex-direction: column;
+
+            &-container {
+                width: 100%;
+                .flex-cross-start;
+                height: 125px;
+                font-size: 14px;
+            }
+
+            &-left,
+            &-right {
+               .flex-main-between;
+                flex-direction: column;
+                height: 100%; 
+            }
+
+            &-left {
+                width: 12%;
+            }
+
+            &-right {
+                width: 88%;
+                line-height: 30px;
+            }
+
+            &-phone {
+                margin-top: 22px;
+            }
+
+            &-info {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+        &-down {
+            width: 100%;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            .flex-main-center;
+
+            &-container{
+                .flex-cross-center;
+                flex-direction: column;
+                padding: 23px 10px;
+                max-width: 1140px;
+                width: 100%;
+
+                .opensans-regular;
+                color: @gray-1;
+                font-size: 13px;
+            }
+            
+            &-heart {
+                color: @red-0;
+            }
+
+            &-company {
+                color: @white-0;
+            }
+        }
+    }
+
+    .copy-right {
+        text-align: center;
+        word-spacing: 3px;
+    }
+
+    .payment {
+        &-container {
+            width: 150px;
+        }
+
+        &-list {
+            .flex-main-arround;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+   .footer {
+        &-down {
+            &-container{
+                .flex-main-between;
+                flex-direction: row;
+            }
+        }
+    }   
+}
+
+@media screen and (min-width: 1024px) {
+    footer{
+        .flex-cross-center;
+        flex-direction: column;
+    }
+    .footer {
+        &-up {
+             .flex-main-between;
+             flex-direction: row;
+             align-items: flex-start;
+        }
+
+        &-title {
+            width: 100%;
+            .flex-main-start;
+        }
+
+        &-list {
+            width: 100%;
+            height: 200px;
+        }
+
+        &-link {
+             font-size: 14px;
+             margin-bottom: 12px;
+        }
+
+        &-about {
+            .flex-cross-start;
+            flex-direction: column;
+        }
+
+        &-nav {
+            margin-bottom: 10px;
+        }
+     }   
+ }

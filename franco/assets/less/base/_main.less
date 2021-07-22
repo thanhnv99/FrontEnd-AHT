@@ -1,0 +1,500 @@
+/*......... Color ..........*/
+@white-0: #FFF;
+@white-1: #F7F7F7;
+@white-2: #D1D1D1;
+@white-3: #FEFEFE;
+@black: #000;
+@black-0: #222;
+@gray-0: #C0C0C0;
+@gray-1: #888;
+@gray-2: #525252;
+@gray-3: #424242;
+@gray-4: #999;
+@gray-5: #828282;
+@gray-6: #DDD;
+@gray-7: #EDEDED;
+@red-0: #FF4628;
+@purple-0: #8262B5;
+@yellow-0: #F8BA04;
+@blue-0: #A1D1DD;
+@hover-color: #8262b5;
+@text-color: #525252;
+@number : #999999;
+/*......... End Color ..........*/
+
+/*......... Transform ..........*/
+.transform (@x:-50%,@y:-50%) {
+	-webkit-transform: translate(@x,@y);
+	   -moz-transform: translate(@x,@y);
+	    -ms-transform: translate(@x,@y);
+	     -o-transform: translate(@x,@y);
+			transform: translate(@x,@y);
+		    	
+}
+.transform-scale(@_x:1.5,@_y:1){
+	 -webkit-transform: scale(@_x,@_y);
+		-moz-transform: scale(@_x,@_y);
+		 -ms-transform: scale(@_x,@_y);
+		  -o-transform: scale(@_x,@_y);
+		     transform: scale(@_x,@_y);
+}
+
+.nth-child(@n) {
+  li:nth-child(@{n}) a:after{
+        font-family: "Font Awesome 5 Free"; content: "\f105";
+		top: 22%;
+		position: absolute;
+		right: 25px;
+		font-size: 19px;
+    }
+}
+
+.transition (@x: 0.5s) {
+	-webkit-transition: all @x;
+	   -moz-transition: all @x;
+	    -ms-transition: all @x;
+	     -o-transition: all @x;
+	        transition: all @x;
+}
+.transition_top(@_x:0.7s){
+	-webkit-transition: top @_x;
+	   -moz-transition: top @_x;
+	    -ms-transition: top @_x;
+	     -o-transition: top @_x;
+	        transition: top @_x;
+
+}
+.transition-search(@_x:0.5s){
+	-webkit-transition: all @_x ease-in;
+	   -moz-transition: all @_x ease-in;
+		-ms-transition: all @_x ease-in;
+		 -o-transition: all @_x ease-in;
+		    transition: all @_x ease-in;
+}
+/*.........End Transform ..........*/
+
+/*......... General ..........*/
+*,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.slick-dots{
+    position: relative;
+    bottom: 0;
+    margin-top: 25px;
+}
+
+.slick-dots li button::before{
+    font-size: 10px;
+    color: #8262B5;
+    opacity: 0.4;
+}
+
+.slick-dots li.slick-active button::before{
+    font-size: 14px;
+    color: #8262B5;
+}
+/*......... End General ..........*/
+
+/*......... Font ..........*/
+ @font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    src: url("../../../../assets/font/montserrat/Montserrat-Bold.ttf")
+      format("truetype");
+  }
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    src: url("../../../../assets/font/montserrat/Montserrat-Regular.ttf")
+      format("truetype");
+  }
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: 400;
+    src: url("../../../../assets/font/opensans/OpenSans-Regular.ttf")
+      format("truetype");
+  }
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: 700;
+    src: url("../../../../franco/assets/font/opensans/OpenSans-Bold.ttf")
+      format("truetype");
+  }
+
+@font-face {
+    font-family: Pacifico;
+    font-weight: 400;
+    src: url("../../../../franco/assets/font/pacifico/Pacifico-Regular.ttf")
+      format("truetype");
+  }
+
+.montserrat() {
+  font-family: Montserrat;
+}
+
+.montserrat-bold() {
+  .montserrat;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-regular() {
+  .montserrat;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.opensans() {
+  font-family: OpenSans;
+}
+
+.opensans-bold() {
+  .opensans;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.opensans-regular() {
+  .opensans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico() {
+  font-family: Pacifico;
+}
+
+.pacifico-regular() {
+  .pacifico;
+  font-weight: 400;
+  font-style: normal;
+}
+/*......... End Font ..........*/
+
+/*......... Flex ..........*/
+.flex-wrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-main-center() {
+    .flex-wrap;
+    justify-content: center;
+}
+
+.flex-main-arround() {
+    .flex-wrap;
+    justify-content: space-around;
+}
+
+.flex-main-between() {
+    .flex-wrap;
+    justify-content: space-between;
+}
+
+.flex-main-start() {
+    .flex-wrap;
+    justify-content: flex-start;
+}
+
+.flex-main-end() {
+    .flex-wrap;
+    justify-content: flex-end;
+}
+
+.flex-cross-center() {
+    .flex-wrap;
+    align-items: center;
+}
+
+.flex-cross-start() {
+    .flex-wrap;
+    align-items: flex-start;
+}
+/*......... End Flex ..........*/
+
+@media screen and (min-width: 320px) {
+    main {
+        .flex-main-center;
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 10px;
+
+        box-sizing: border-box;
+    }
+
+    .banner {
+        &-container{
+          margin-bottom: 75px;  
+        }
+    
+        &-image {
+            margin-bottom: 10px;
+        }
+    }
+
+    .feature {
+        &-container {
+            .flex-main-center;
+            
+            .montserrat-bold;
+            text-transform: uppercase;
+        }
+
+        &-content {
+            .flex-cross-center;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 50px;
+
+            position: relative;
+        }
+
+        &-content::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: @purple-0;
+        }
+
+        &-title {
+            margin-bottom: 10px;
+
+            font-size: 12px;
+            color: @purple-0;
+            letter-spacing: 6px;
+        }
+
+        &-subtitle {
+            margin-bottom: 27px;
+
+            font-size: 24px;
+            letter-spacing: 2.2px;
+        }
+    }
+
+    .product {
+        &-card {
+            margin-bottom: 43px;
+        }
+
+        &-image {
+            &-container {
+               position: relative;
+               margin-bottom: 10px; 
+            }
+            
+            &-element {
+                width: 100%;
+            }
+        }
+
+        &-cart {
+            &-container {
+                .flex-main-center;
+                width: 120px;
+                height: 40px;
+
+                position: absolute;
+                bottom: 9px;
+                left: 4px;
+                z-index: 100;
+
+                background-color: @white-0;
+            }
+
+            &-button {
+                .montserrat-bold;
+                font-size: 12px;
+                text-transform: uppercase; 
+            } 
+
+            &-button:hover {
+                color: @purple-0;
+            } 
+        }
+
+        &-summary {
+            .flex-cross-center;
+            flex-direction: column;
+            
+            text-transform: none;
+        }
+
+        &-name {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        &-star {
+            &-container {
+                .flex-main-arround;
+                width: 35%;
+                margin-bottom: 9px;
+                
+                color: @white-2;
+                font-size: 13px;
+            }
+
+            &-active {
+                color: @yellow-0;
+            }
+        }
+
+        &-cost {
+            &-container {
+                .flex-main-arround;
+                width: 50%;
+            }
+
+            &-old {
+                color: @gray-4;
+                font-weight: 400;
+                text-decoration: line-through;
+                font-size: 15px;
+            }
+
+            &-new {
+                color: @purple-0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+     .banner {
+        &-right{
+          .flex-main-arround;
+          align-items: center; 
+        }
+    }
+
+    .product {
+        &-container {
+            .flex-main-arround;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+     .banner {
+        &-container{
+          .flex-main-arround;
+          width: 100%;
+          max-width: 1140px; 
+        }
+        
+        &-left {
+            width: 65.79%;
+        }
+
+        &-right {
+            width: 31.67%;
+            .flex-main-between;
+            flex-direction: column;
+        }
+
+        &-image {
+            margin-bottom: 0;
+        }
+    }
+
+    .product {
+        &-card {
+            width: 25%;
+            max-width: 263px;
+        }
+    }
+
+    .feature {
+        &-container {
+          width: 100%;
+          max-width: 1140px; 
+        }
+
+        &-content {
+            .flex-cross-start;
+        }
+
+        &-title {
+            font-size: 12px;
+        }
+
+        &-subtitle {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+     main {
+        .flex-cross-center;
+        flex-direction: column;
+    }
+
+    .banner {
+        &-container {
+          .flex-main-between;
+        }
+    }
+
+    .product {
+        &-container{
+            .flex-main-between;
+        }
+
+        &-card{
+            width: 100%;
+        }
+
+        &-summary {
+            .flex-cross-start;
+        }
+
+        &-star {
+            &-container {
+                display: block;
+
+                font-size: 11px;
+            }
+        }
+
+        &-cost {
+            &-container {
+                display: block;
+            }
+        }
+    }
+}
