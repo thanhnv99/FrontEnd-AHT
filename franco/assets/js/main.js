@@ -1,3 +1,9 @@
+$(document).ready(()=>{
+    $('#menu-button').click(()=>{
+        $('.menu-container').first().slideToggle("slow");
+    });
+});
+
 $(document).ready(function(){
     var data = {
       dots: true,
