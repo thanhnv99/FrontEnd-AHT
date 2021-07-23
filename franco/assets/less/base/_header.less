@@ -4,63 +4,22 @@
 @import '../source/_variable.less';
 /*......... End import source ..........*/
 
-.header {
-
-	&_top{
-		display: flex;
-		align-items: center;
-	    justify-content: space-between;
-		padding: 0 30px;
-		border-bottom: 1px solid #ddd;
-		height: 80px;
-
-		&_cart {
-
-			.cart {
-				.transform(1px, -4px);
-                .flex-wrap();
-                margin-top: 8px;
-
-				.heart-icon {
-					color: @black;
-					padding-right: 22px;
-					font-size: 30px;
-                    margin-right: 5px;
-				}
-
-				.heart-icon:hover {
-					color: @hover-color;
-				}
-
-				.cart-icon {
-					color: @black;
-					font-size: 30px;
-				}
-
-				.cart-icon:hover {
-					color: @hover-color;
-				}
-			}
-		}
-
-	}
-
-}
-
 @media screen and (min-width:320px) {
 
     header {
         .flex-main-center;
-        padding: 12px 0;
-        
         .opensans-regular;
+        padding: 12px 0;
         color: @gray-2;
         font-size: 12px;
-
         background-color: @black-0;
     }
 
     .header {
+        &-welcome {
+            letter-spacing: 0.2px;
+        }
+        
         &-container {
             .flex-main-arround;
             width: 100%;
@@ -68,6 +27,7 @@
         }
 
         &-link {
+            // display: none;
             text-transform: capitalize;
             color: @gray-2;
         }
@@ -89,7 +49,7 @@
         }
 
         &-link {
-            &_element {
+            &-element {
                 margin-right: 5px;
             }
 
