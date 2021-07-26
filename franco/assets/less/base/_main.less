@@ -113,7 +113,7 @@ button {
 
     .banner {
         &-container{
-          margin-bottom: 75px;  
+          margin-bottom: 74px;  
         }
     
         &-image {
@@ -124,7 +124,6 @@ button {
     .feature {
         &-container {
             .flex-main-center;
-            
             .montserrat-bold;
             text-transform: uppercase;
         }
@@ -133,8 +132,8 @@ button {
             .flex-cross-center;
             flex-direction: column;
             width: 100%;
-            margin-bottom: 50px;
-
+            margin-bottom: 49px;
+            margin-left: -1px;
             position: relative;
         }
 
@@ -143,13 +142,12 @@ button {
             position: absolute;
             bottom: 0;
             width: 50px;
-            height: 2px;
+            height: 1px;
             background-color: @purple-0;
         }
 
         &-title {
-            margin-bottom: 10px;
-
+            margin-bottom: 8.5px;
             font-size: 12px;
             color: @purple-0;
             letter-spacing: 6px;
@@ -157,7 +155,6 @@ button {
 
         &-subtitle {
             margin-bottom: 27px;
-
             font-size: 24px;
             letter-spacing: 2.2px;
         }
@@ -186,7 +183,7 @@ button {
                 height: 40px;
 
                 position: absolute;
-                bottom: 9px;
+                bottom: 10px;
                 left: 4px;
                 z-index: 100;
 
@@ -194,9 +191,11 @@ button {
             }
 
             &-button {
-                .montserrat-bold;
+                .montserrat-regular;
                 font-size: 12px;
                 text-transform: uppercase; 
+                padding-bottom: 2px;
+                padding-left: 2.5px;
             } 
 
             &-button:hover {
@@ -212,9 +211,11 @@ button {
         }
 
         &-name {
-            font-size: 14px;
-            font-weight: 400;
+            .opensans-bold;
+            font-size: 15px;
+            font-weight: 700;
             margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
 
         &-star {
