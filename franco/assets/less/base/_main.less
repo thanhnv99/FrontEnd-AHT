@@ -132,7 +132,7 @@ button {
             .flex-cross-center;
             flex-direction: column;
             width: 100%;
-            margin-bottom: 49px;
+            margin-bottom: 51px;
             margin-left: -1px;
             position: relative;
         }
@@ -142,21 +142,23 @@ button {
             position: absolute;
             bottom: 0;
             width: 50px;
-            height: 1px;
+            height: 0.5px;
             background-color: @purple-0;
         }
 
-        &-title {
-            margin-bottom: 8.5px;
+        &-franco {
+            margin-bottom: 11px;
             font-size: 12px;
             color: @purple-0;
             letter-spacing: 6px;
+            margin-top: -1px;
         }
 
-        &-subtitle {
-            margin-bottom: 27px;
+        &-items {
+            margin-bottom: 23px;
             font-size: 24px;
             letter-spacing: 2.2px;
+            margin-left: -1px;
         }
     }
 
@@ -171,7 +173,7 @@ button {
                margin-bottom: 10px; 
             }
             
-            &-element {
+            &-img {
                 width: 100%;
             }
         }
@@ -184,7 +186,7 @@ button {
 
                 position: absolute;
                 bottom: 10px;
-                left: 4px;
+                left: 5px;
                 z-index: 100;
 
                 background-color: @white-0;
@@ -194,7 +196,7 @@ button {
                 .montserrat-regular;
                 font-size: 12px;
                 text-transform: uppercase; 
-                padding-bottom: 2px;
+                padding-bottom: 1px;
                 padding-left: 2.5px;
             } 
 
@@ -214,8 +216,8 @@ button {
             .opensans-bold;
             font-size: 15px;
             font-weight: 700;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+            letter-spacing: 0.7px;
         }
 
         &-star {
@@ -234,6 +236,8 @@ button {
         }
 
         &-cost {
+            .opensans-regular;
+
             &-container {
                 .flex-main-arround;
                 width: 50%;
@@ -249,6 +253,7 @@ button {
             &-new {
                 color: @purple-0;
                 font-size: 16px;
+                letter-spacing: 0.1px;
             }
         }
     }
@@ -309,11 +314,11 @@ button {
             .flex-cross-start;
         }
 
-        &-title {
+        &-franco {
             font-size: 12px;
         }
 
-        &-subtitle {
+        &-items {
             font-size: 24px;
         }
     }
