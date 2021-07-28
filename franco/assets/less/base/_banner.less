@@ -25,11 +25,11 @@
 
                 .pacifico-regular;
                 font-size: 20px;
-                letter-spacing: .1px;
+                letter-spacing: 0.1px;
 
                 position: absolute;
                 bottom: 28%;
-                right: 13%;
+                right: 12.25%;
             }
 
             &-text {
@@ -50,6 +50,10 @@
                 text-transform: capitalize;
 
                 background-color: @purple-0;
+            }
+
+            &-button:hover {
+                background-color: @black;
             }
         }
 
@@ -82,12 +86,13 @@
                     color: @gray-8;
                     font-size: 16px;
                     letter-spacing: 3px;
-                    margin-bottom: 5px;
+                    margin-top:5px;
                 }
 
                 &-large {
                     .montserrat-bold;
                     color: @black;
+                    margin-top: 0px;
                 }              
                   
             }
@@ -114,15 +119,17 @@
                 &-large {
                     .montserrat-bold;
                     color: @black;
-                    margin-bottom: 16px;
+                    margin-bottom: 14px;
                     font-size: 21px;
+                    letter-spacing: -0.6px;
                 }   
                 
                 &-button {
                     justify-content: center;
                     width: 108px;
                     height: 40px;
-                    margin-right: 20px;
+                    margin-right: 19px;
+                    margin-left: 1px;
                     margin-top: 3px;
 
                     .montserrat-regular;
@@ -131,6 +138,15 @@
                     text-transform: capitalize;
 
                     background-color: @purple-0;
+
+                    &-text {
+                        padding-left: 6px;
+                        padding-bottom: 1px;
+                    }
+                }
+
+                &-button:hover {
+                    background-color: @black;
                 }
             }
         }
