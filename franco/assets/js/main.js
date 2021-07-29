@@ -27,7 +27,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    variableWidth: true
+    variableWidth: true,
   };
   $(".blog-slider").slick(data);
 });
