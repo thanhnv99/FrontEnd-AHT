@@ -35,14 +35,13 @@
         }
 
         &-slider {
-            .flex-main-arround;
+            // .flex-main-arround;
             overflow-x: hidden;
         }
 
         &-card {
             .flex-main-center;
-            width: 100%;
-            max-width: 300px;
+            width: 300px;
             margin-left: 15px;
             margin-right: 15px;
 
@@ -52,6 +51,7 @@
 
         &-image-container {
             width: 100%;
+            max-width: 360px;
             height: 202px;
             position: relative;
 
@@ -111,7 +111,7 @@
 
             color: @black-0; 
             line-height: 20px;
-            font-weight: 400;
+            font-weight: 700;
             color: @black-0;
         }
 
@@ -149,9 +149,9 @@
 
 @media screen and (min-width: 425px) {
      .blog {
-        &-card {
-            margin-left: 15px;
-            margin-right: 15px;
+        &-slider {
+            width: 80%;
+            padding: 0 10px;
         }
     }
 }
@@ -159,12 +159,12 @@
 @media screen and (min-width: 768px) {
     .blog {
         &-slider {
-            width: 60%;
+            width: 720px;
+            padding: 0 10px;
         }
 
        &-card {
-           margin-left: 100px;
-           margin-right: 0px;
+           width: 350px;
        }
    }
 }
@@ -180,6 +180,7 @@
             .feature-content {
                 .flex-cross-center;
                 margin-bottom: 50px;
+                box-sizing: border-box;
             }
 
             .feature-latest {
@@ -197,21 +198,28 @@
         }
 
         &-slider {
+            padding: 0px;
+        }
+
+    //     &-name {
+    //         .opensans-regular;
+    //         font-weight: 400px;
+    //         letter-spacing: 1.2px;
+    //     }
+
+    //     &-card {
+    //        max-width: 362px;
+    //        margin-left: 15px;
+    //        margin-right: 14.5px;
+    //    }
+   }
+}
+
+@media screen and (min-width: 1440px) {
+    .blog {
+        &-slider {
             max-width: 1140px;
             width: 100%;
-            padding-left: -1px;
         }
-
-        &-name {
-            .opensans-regular;
-            font-weight: 400px;
-            letter-spacing: 1.2px;
-        }
-
-        &-card {
-           max-width: 362px;
-           margin-left: 15px;
-           margin-right: 14.5px;
-       }
-   }
+    }
 }
