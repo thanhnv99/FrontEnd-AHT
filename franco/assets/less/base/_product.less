@@ -1,0 +1,174 @@
+/*......... Import source ..........*/
+@import '../source/_mixins.less';
+@import '../source/_typography.less';
+@import '../source/_variable.less';
+/*......... End import source ..........*/
+
+@media screen and (min-width: 320px) {
+    
+    .product {
+        &-card {
+            margin-bottom: 46px;
+            .col(100%);
+        }
+
+        &-image {
+            
+            &-container {
+               position: relative;
+               margin-bottom: 10px; 
+               line-height: 0px;
+            }
+            
+            &-img {
+                height: 324px;
+                width: 100%;
+            }
+        }
+
+        &-cart {
+            &-container {
+                .flex-main-center;
+                width: 120px;
+                height: 40px;
+
+                position: absolute;
+                bottom: 11px;
+                left: 5px;
+                z-index: 100;
+
+                background-color: @white-0;
+            }
+
+            &-button {
+                .montserrat-regular;
+                font-size: 12px;
+                text-transform: uppercase; 
+            } 
+
+            &-button:hover {
+                color: @purple-0;
+            } 
+        }
+
+        &-summary {
+            .flex-cross-center;
+            flex-direction: column;
+            
+            text-transform: none;
+        }
+
+        &-name {
+            .opensans-bold;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 13px;
+            letter-spacing: -0.2px;
+        }
+
+        &-star {
+            &-container {
+                .flex-main-arround;
+                width: 35%;
+                margin-bottom: 8px;
+                
+                color: @white-2;
+                font-size: 12px;
+            }
+
+            &-checked {
+                color: @yellow-0;
+            }
+
+        }
+
+        &-cost {
+            .opensans-regular;
+
+            &-container {
+                .flex-main-arround;
+                width: 50%;
+            }
+
+            &-old {
+                color: @gray-4;
+                font-weight: 400;
+                text-decoration: line-through;
+                font-size: 15px;
+            }
+
+            &-new {
+                color: @purple-0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .product {
+        &-card{
+            .col(50%);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .product {
+        &-container {
+            width: 750px;
+        }
+
+        &-card{
+            .col(50%);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .product {
+        &-container {
+            width: 1140px;
+        }
+
+        &-card{
+            .col(25%);
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .product {
+        &-container{
+            .flex-main-between;
+        }
+
+        &-summary {
+            .flex-cross-start;
+        }
+
+        &-star {
+
+            &-container {
+                display: block;
+                font-size: 10px;
+
+                .fa-star {
+                    font-size: 10px;
+                    .transform-scale();
+                }
+            }
+        }
+
+        &-cost {
+            &-container {
+                display: block;
+            }
+        }
+    }
+}
