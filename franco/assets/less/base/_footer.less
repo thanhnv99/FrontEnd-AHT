@@ -15,7 +15,7 @@
 
     .footer {
         &-up {
-            .flex-cross-center;
+            .flex-align-items-center;
             flex-direction: column;
             padding-left: 10px;
             padding-right: 10px;
@@ -26,7 +26,7 @@
         }
 
         &-about {
-            .flex-cross-center;
+            .flex-align-items-center;
             max-width: 263px;
             flex-direction: column;
             width: 100%;
@@ -61,7 +61,7 @@
             padding-left: 2px;
 
             &-list {
-               .flex-main-between;
+               .flex-space-between;
             }
         }
 
@@ -69,11 +69,11 @@
             width: 100%;
             max-width: 360px;
             margin-bottom: 40px;
-            .flex-cross-center;
+            .flex-align-items-center;
             flex-direction: column;
 
             &-container {
-                .flex-main-between;
+                .flex-space-between;
                 width: 100%;
             }
 
@@ -117,19 +117,19 @@
         &-location {
             width: 100%;
             max-width: 262px;
-            .flex-cross-center;
+            .flex-align-items-center;
             flex-direction: column;
 
             &-container {
                 width: 100%;
-                .flex-cross-start;
+                .flex-align-items-start;
                 height: 125px;
                 font-size: 14px;
             }
 
             &-left,
             &-right {
-               .flex-main-between;
+               .flex-space-between;
                 flex-direction: column;
                 height: 100%; 
             }
@@ -188,7 +188,7 @@
             margin-top: -1px;
 
             &-container{
-                .flex-cross-center;
+                .flex-align-items-center;
                 flex-direction: column;
                 padding: 25px 10px 25px 10px;
                 max-width: 1140px;
@@ -222,7 +222,7 @@
         }
 
         &-list {
-            .flex-main-arround;
+            .flex-space-arround;
             font-size: 22px;
 
             &-link:hover {
@@ -236,14 +236,14 @@
    .footer {
         
         &-up {
-            .flex-main-between;
+            .flex-space-between;
             flex-direction: row;
             align-items: flex-start;
         }
 
         &-down {
             &-container{
-                .flex-main-between;
+                .flex-space-between;
                 flex-direction: row;
             }
         }
@@ -291,20 +291,20 @@
 
 @media screen and (min-width: 1024px) {
     footer {
-        .flex-cross-center;
+        .flex-align-items-center;
         flex-direction: column;
     }
 
     .footer {
         &-up {
-            .flex-main-between;
+            .flex-space-between;
             //  flex-direction: row;
             //  align-items: flex-start;
         }
 
         // &-title {
         //     width: 100%;
-        //     .flex-main-start;
+        //     .flex-start;
         // }
 
         // &-list {
@@ -335,14 +335,14 @@
     .footer {
 
         &-up {
-            .flex-main-between;
+            .flex-space-between;
             padding-left: 0;
             padding-right: 0;
         }
 
         &-title {
             width: 100%;
-            .flex-main-start;
+            .flex-start;
         }
 
         &-list {
@@ -355,13 +355,13 @@
             margin-bottom: 15px;
             letter-spacing: 0.5px;
             width: fit-content;
-            .flex-main-start;
+            .flex-start;
 
             font-size: 14px;
          }
 
         &-about {
-            .flex-cross-start;
+            .flex-align-items-start;
             text-align: left;
         }
 
