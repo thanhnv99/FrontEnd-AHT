@@ -7,8 +7,11 @@
 @media screen and (min-width: 320px) {
     
     .product {
-        max-width: 100%;
-        
+
+        &-container {
+            overflow-x:hidden;
+        }
+
         &-card {
             margin-bottom: 46px;
             .col(100%);
@@ -17,13 +20,13 @@
         &-image {
             
             &-container {
-               position: relative;
-               margin-bottom: 10px; 
-               line-height: 0px;
+                position: relative;
+                margin-bottom: 10px; 
+                line-height: 0px;
             }
             
             &-img {
-                width: 100%;
+                max-width: 100%;
             }
         }
 
@@ -121,12 +124,11 @@
     .product {
 
         &-container {
-            width: 750px;
-            
+            width: 100%;
         }
 
         &-card{
-            .col(50%);
+            .col(25%);
         }
     }
 }
@@ -134,10 +136,6 @@
 @media screen and (min-width: 1024px) {
 
     .product {
-        &-container {
-            width: 1140px;
-            max-width: 100%;
-        }
 
         &-image {
             &-img {
@@ -145,7 +143,6 @@
                 width: 100%;
             }
         }
-
 
         &-card{
             .col(25%);
