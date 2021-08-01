@@ -130,6 +130,40 @@
         &-card{
             .col(25%);
         }
+
+        &-name {
+            .opensans-bold;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        &-star {
+            &-container {
+                .flex-space-arround;
+                width: 35%;
+                margin-bottom: 8px;
+                
+                color: @white-2;
+                font-size: 8px;
+            }
+
+            &-checked {
+                color: @yellow-0;
+            }
+
+        }
+
+        &-cost {
+
+            &-old {
+                font-size: 12px;
+            }
+
+            &-new {
+                color: @purple-0;
+                font-size: 12px;
+            }
+        }
     }
 }
 
@@ -146,6 +180,51 @@
 
         &-card{
             .col(25%);
+        }
+
+        &-name {
+            .opensans-bold;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 13px;
+            letter-spacing: -0.2px;
+        }
+
+        &-star {
+            &-container {
+                .flex-space-arround;
+                width: 35%;
+                margin-bottom: 8px;
+                
+                color: @white-2;
+                font-size: 12px;
+            }
+
+            &-checked {
+                color: @yellow-0;
+            }
+
+        }
+
+        &-cost {
+            .opensans-regular;
+
+            &-container {
+                .flex-space-arround;
+                width: 50%;
+            }
+
+            &-old {
+                color: @gray-4;
+                font-weight: 400;
+                text-decoration: line-through;
+                font-size: 15px;
+            }
+
+            &-new {
+                color: @purple-0;
+                font-size: 16px;
+            }
         }
     }
 
