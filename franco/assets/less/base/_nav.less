@@ -9,6 +9,8 @@
     .nav {
         &-top{
             &-cart {
+                margin-left: 14px;
+
                 .cart {
                     .heart-icon {
                         color: @black;
@@ -34,8 +36,7 @@
 
     nav {
         .flex-align-items-center;
-        flex-direction: column;
-        padding: 10px 30px 10px 29px;
+        padding: 10px;
         border-bottom: 2px solid @gray-6;
         position: relative;
     }
@@ -44,7 +45,6 @@
         &-nav {
             .flex-align-items-center;
             width: 200px;
-            margin-bottom: 20px;
         }
     }
 
@@ -97,13 +97,11 @@
 
     .icon {
         &-nav {
-            .flex-space-arround;
-            width: 100%;
+            display: flex;
         }
 
         &-link {
             color: @black;
-            // padding-top: 10px;
 
             &-element {
                 font-size: 20px;
@@ -113,6 +111,7 @@
 
     #menu-button-nav {
         display: flex;
+        margin-left: 14px;
     }
 
 }
@@ -124,6 +123,7 @@
         flex-direction: row;
         padding-left: 10px;
         padding-right: 10px;
+
     }
 
     .logo {
@@ -151,6 +151,7 @@
     .icon {
         &-nav {
             width: 30%;
+            .flex-space-arround;
         }
     }
 
