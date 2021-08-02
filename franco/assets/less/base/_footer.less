@@ -236,8 +236,8 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-   .footer {
+@media screen and (min-width:420px) {
+    .footer {
         
         &-up {
             .flex-space-between;
@@ -277,7 +277,20 @@
         &-link {
             .flex-main-center;
         }
-    }   
+    } 
+
+    .copy-right {
+        order: 1;
+    }
+
+    .payment {
+        &-container {
+            order: 2;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {  
 
     .copy-right {
         padding-bottom: 0;
