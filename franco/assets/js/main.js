@@ -13,6 +13,7 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 2000,
     variableWidth: true,
+    initialSlide:1
   };
   $(".blog-slider").slick(data);
 });

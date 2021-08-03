@@ -36,15 +36,14 @@
 
         &-slider {
             .flex-space-arround;
-            // overflow-x: hidden;
             max-width: 100%;
         }
 
         &-card {
             .flex-main-center;
             max-width: 100%;
-            
-
+            margin-left: 15px;
+            margin-right: 15px;
             background-color: @white-0;
             box-sizing: border-box;
         }
@@ -52,9 +51,7 @@
         &-image-container {
             width: 100%;
             max-width: 361px;
-            height: 150px;
             position: relative;
-
             overflow: hidden;
         }
 
@@ -62,12 +59,10 @@
             width: 50px;
             height: 50px;
             padding: 5px;
-
             position: absolute;
             left:20px;
             top: 22px;
             z-index: 100;
-
             background-color: @blue-0;
             user-select: none;
 
@@ -151,21 +146,18 @@
 @media screen and (min-width: 425px) {
     .blog {
         &-slider {
-            max-width: 100%;
+            width: 100%;
+            max-width: 768px;
         }
 
         &-card {
-            // width: 361px;
-            // max-width: 100%;
-            margin-left: 15px;
-            margin-right: 15px;
+            width:calc(calc(100vw/2) - 20px);
         }
 
-        // &-image-container {
-        //     width: 100%;
-        //     max-width: 361px;
-        //     height: 202px;
-        // }
+        &-image-container {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 }
 
@@ -173,21 +165,18 @@
     .blog {
 
         &-slider {
-            max-width: 100%;
+            width: 100%;
+            max-width: 1024px;
         }
 
-        // &-card {
-        //     width: 365px;
-        //     max-width: 100%;
-        //     margin-left: 15px;
-        //     margin-right: 15px;
-        // }
+        &-card {
+            width:calc(calc(100vw/2) - 20px);
+        }
 
-        // &-image-container {
-        //     width: 100%;
-        //     max-width: 365px;
-        //     height: 202px;
-        // }
+        &-image-container {
+            width: 100%;
+            max-width: 100%;
+        }
 
         &-name {
             font-size: 16px;
@@ -202,21 +191,19 @@
 @media screen and (min-width: 1024px) {
     .blog {
         &-slider {
-            max-width: 100%;
+            width: 100%;
+            max-width: 1140px;
         }
 
-        // &-card {
-        //     width: 315px;
-        //     max-width: 100%;
-        //     margin-left: 15px;
-        //     margin-right: 15px;
-        // }
+        &-card {
+            width:calc(calc(100vw/3) - 20px);
+            max-width: calc(calc(1140px/3) - 20px);
+        }
 
-        // &-image-container {
-        //     width: 100%;
-        //     max-width: 361px;
-        //     height: 180px;
-        // }
+        &-image-container {
+            width: 100%;
+            max-width: 100%;
+        }
 
         &-container {
             padding-top: 73px;
@@ -272,6 +259,7 @@
 
         &-slider {
             max-width: 1140px;
+            width: 100%;
         }
     }
 }
